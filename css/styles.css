@@ -23,6 +23,21 @@ li a {
   text-decoration: none;
 }
 
+.page-title {
+  animation-duration: 2s;
+  animation-name: apear;
+  animation-iteration-count: initial;
+}
+
+@keyframes apear {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .grid-container {
   display: grid;
   width: 100%;
@@ -259,10 +274,15 @@ form-input:focus {
 
 .card-list {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
   max-width: 280px;
   text-align: center;
   margin: 15px;
   padding: 10px;
+}
+
+.card-list:hover {
+  transform: scale(1.1);
 }
 
 .card-list p {
