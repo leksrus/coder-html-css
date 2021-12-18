@@ -4,23 +4,8 @@
   box-sizing: border-box;
 }
 
-body,
-html {
-  height: 100%;
-}
-
-ul {
-  list-style-type: none;
-}
-
-nav {
-  background: rgb(0, 0, 0);
-  padding: 5px 20px;
-}
-
-li a {
-  color: white;
-  text-decoration: none;
+.menu li {
+  width: 120px;
 }
 
 .page-title {
@@ -38,94 +23,13 @@ li a {
   }
 }
 
-.grid-container {
-  display: grid;
-  width: 100%;
-
-  grid-template-columns: repeat(4, 3fr);
-  grid-template-rows: auto;
-  margin: 0 auto;
-  gap: 15px;
-
-  grid-template-areas:
-    "header header header header"
-    "main main main main"
-    "footer footer footer footer";
-}
-
-.header {
-  grid-area: header;
-}
-
-.body-container {
-  grid-area: main;
+.image-min-height-315 {
+  min-height: 315px;
+  max-height: 315px;
 }
 
 .footer-container {
-  grid-area: footer;
   background-color: darkslategray;
-}
-
-.menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.menu li {
-  font-size: 25px;
-  padding: 15px;
-  gap: 7px;
-  white-space: nowrap;
-}
-
-.logo {
-  display: flex;
-  align-content: space-between;
-  justify-content: flex-start;
-  gap: 20px;
-}
-
-.logo h1 {
-  color: white;
-}
-
-.button-secondary a {
-  padding: 7.5px 15px;
-  border-bottom: 2px rgb(2, 27, 170) solid;
-  font-size: 18px;
-  font-weight: 300;
-}
-
-.button a {
-  padding: 7.5px 15px;
-  border-bottom: 2px rgb(97, 170, 2) solid;
-  font-size: 18px;
-  font-weight: 300;
-}
-
-.button:hover {
-  background-color: rgb(97, 170, 2);
-  border-radius: 7px;
-  transition: 0.3s ease;
-}
-
-.button-secondary:hover {
-  background-color: rgb(2, 27, 170);
-  border-radius: 7px;
-  transition: 0.3s ease;
-}
-
-.item a {
-  font-size: 18px;
-  font-weight: 300;
-}
-
-.item:hover {
-  background-color: #4c9e9e;
-  border-radius: 5px;
-  transition: 0.3s ease;
 }
 
 .product-img {
@@ -165,39 +69,15 @@ li a {
   font-size: 20px;
 }
 
-.align-center {
-  text-align: center;
-}
-
-.logo-h1 {
-  margin-top: 15px;
-}
-
 .logo-img {
   border-radius: 50%;
-}
-
-.cart {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  color: white;
-  margin-top: 5px;
-}
-
-.cart p {
-  font-size: 18px;
-  font-weight: 300;
-}
-
-.cart:hover {
-  border-bottom: 2px rgb(170, 167, 2) solid;
-  transition: 0.3s ease;
 }
 
 .img-cart {
   max-width: 100%;
   margin-top: 5px;
+  width: 30px;
+  height: 30px;
 }
 
 .form-contact {
@@ -208,41 +88,26 @@ li a {
   padding: 40px;
 }
 
-.form-container {
-  width: 500px;
-  min-width: 375px;
-  padding: 30px;
-  background-color: rgb(197, 193, 193);
-}
-
-.form-sign {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 50px;
-}
-
-.btn {
+.btn-custom {
   background-color: #04aa6d;
+  border-radius: 4px;
   color: white;
-  padding: 16px 20px;
+  padding: 10px;
   border: 1px solid black;
   cursor: pointer;
   width: 100%;
   opacity: 0.7;
 }
 
-.btn:hover {
+.btn-custom:hover {
   opacity: 25;
 }
 
 .form-input {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
-  text-align: center;
+  border: 1px solid #ccc;
+  background-color: rgb(231, 231, 231);
+  padding: 12px 20px;
+  border-radius: 4px;
 }
 
 form-input:focus {
@@ -250,38 +115,11 @@ form-input:focus {
   outline: none;
 }
 
-.footer-box {
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  align-content: space-between;
-  justify-content: space-between;
-  padding: 30px;
-}
-
-.text-box {
-  display: flex;
-  margin: 0px 150px 0px 150px;
-}
-
-.text-box p {
-  padding: 25px;
-}
-
-.footer-box div {
-  margin: 60px;
-}
-
-.card-list {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+.transition {
   transition: transform 0.2s;
-  max-width: 280px;
-  text-align: center;
-  margin: 15px;
-  padding: 10px;
 }
 
-.card-list:hover {
+.transition:hover {
   transform: scale(1.1);
 }
 
@@ -398,31 +236,13 @@ form-input:focus {
 }
 
 /* Mobile menu */
-@media all and (min-width: 300px) and (max-device-width: 650px) {
-  .item a {
-    font-size: 16px;
-    font-weight: 100;
-  }
-
+@media all and (min-width: 200px) and (max-device-width: 650px) {
   .logo h1 {
     font-size: 30px;
   }
 
-  .page-title section h2 {
+  .page-title h2 {
     font-size: 25px;
-  }
-
-  .footer-box div {
-    flex: 2;
-    margin-left: 120px;
-  }
-
-  .form-bg-img {
-    padding: 2px;
-  }
-
-  .form-sign {
-    padding: 2px;
   }
 
   .size-20 {
@@ -430,54 +250,6 @@ form-input:focus {
   }
 
   .size-35 {
-    font-size: medium;
-  }
-
-  .product-flex {
-    justify-content: center;
-    margin-left: 0;
-  }
-
-  .cart-product-description {
-    display: none;
-  }
-
-  .cart-flex {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .cart-product-image {
-    width: 100%;
-  }
-
-  .btn-remove {
-    width: 250px;
-    margin-top: 15px;
-    margin-bottom: 20px;
-  }
-
-  .cart-counter {
-    width: 40%;
-    margin-top: 25px;
-  }
-
-  .cart-checkout {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .cart-checkout button {
-    width: 90%;
-    margin-bottom: 50px;
-    margin-top: 50px;
-  }
-
-  .action {
-    margin-bottom: 30px;
-    margin-top: 10px;
     font-size: medium;
   }
 }
