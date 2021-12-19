@@ -28,18 +28,13 @@
   max-height: 315px;
 }
 
-.footer-container {
-  background-color: darkslategray;
+.cart-image-min-height-150 {
+  min-height: 150px;
+  max-height: 150px;
 }
 
-.product-img {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  width: 250px;
-  max-width: 100%;
-  height: 250px;
-  margin: 55px;
+.footer-container {
+  background-color: darkslategray;
 }
 
 .font-share-tech-mono {
@@ -122,56 +117,6 @@ form-input:focus {
   transform: scale(1.1);
 }
 
-.card-list p {
-  margin-top: 15px;
-}
-
-.card-list p button {
-  margin-top: 20px;
-}
-
-.action {
-  font-weight: 600;
-  color: #e44c4c;
-  cursor: pointer;
-  border-bottom: 1px solid #e44c4c;
-}
-
-.cart-flex {
-  margin: auto;
-  width: 80%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.cart-product-image {
-  width: 15%;
-  text-align: center;
-}
-
-.cart-product-description {
-  height: 100%;
-}
-
-.cart-product-description h3 {
-  padding-top: 5px;
-  line-height: 10px;
-}
-
-.cart-product-price {
-  line-height: 10px;
-  font-weight: 600;
-  color: #909090;
-}
-
-.cart-counter {
-  width: 15%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .btn-cart {
   width: 40px;
   height: 40px;
@@ -190,41 +135,12 @@ form-input:focus {
   opacity: 25;
 }
 
-.btn-remove {
-  background-color: #aa0404;
-  border-radius: 4px;
-  color: white;
-  padding: 16px 20px;
-  border: 1px solid black;
-  cursor: pointer;
-  opacity: 0.7;
-}
-
-.btn-remove:hover {
-  opacity: 25;
-}
-
 .count {
   font-family: ‘Open Sans’;
   font-weight: 900;
   color: #202020;
-}
-
-.cart-checkout {
-  display: flex;
-  width: 90%;
-  flex-direction: row-reverse;
-}
-
-.cart-checkout button {
-  width: 20%;
-  border-radius: 5px;
-  margin-bottom: 50px;
-}
-
-.product-img {
-  max-width: 100%;
-  margin: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 /* Mobile menu */
@@ -243,5 +159,10 @@ form-input:focus {
 
   .size-35 {
     font-size: medium;
+  }
+
+  .cart-image-min-height-150 {
+    min-height: 100px;
+    max-height: 100px;
   }
 }
