@@ -143,6 +143,11 @@ form-input:focus {
   margin-right: 150px;
 }
 
+.image-carousel {
+  width: auto;
+  max-height: 600px;
+}
+
 /* Mobile menu */
 @media all and (min-width: 200px) and (max-device-width: 650px) {
   .logo h1 {
