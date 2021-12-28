@@ -1,0 +1,26 @@
+@media all and (min-width: 300px) and (max-device-width: 650px) {
+  .logo h1 {
+    font-size: 30px;
+  }
+
+  .page-title h2 {
+    font-size: 25px;
+  }
+
+  .size-20 {
+    font-size: small;
+  }
+
+  .size-35 {
+    font-size: medium;
+  }
+
+  .cart-image-min-height-150 {
+    min-height: 100px;
+    max-height: 100px;
+  }
+
+  #carouselExampleIndicators {
+    display: none;
+  }
+}
