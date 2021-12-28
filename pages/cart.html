@@ -160,10 +160,10 @@
                   <div class="card-body font-varela">
                     <h5 class="card-title"><b>Memory HyperX</b></h5>
                     <p class="card-text">Some text Some text Some texts Some text Some text Some text.</p>
-                    <p class="card-text cart-product-price">$250.99</p>
+                    <p class="card-text cart-product-price">$501.98</p>
                     <div class="d-flex align-items-center justify-content-center">
                       <div class="btn-cart">+</div>
-                      <div class="count">1</div>
+                      <div class="count">2</div>
                       <div class="btn-cart">-</div>
                     </div>
                   </div>
@@ -285,7 +285,98 @@
         <div class="row">
           <div class="col-12">
             <div class="d-flex flex-row-reverse">
-              <a class="btn btn-success btn-lg" href="#" role="button">Checkout</a>
+              <a class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#checkout" href="#" role="button">Checkout</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- modal checkout -->
+      <section class="container">
+        <div class="row">
+          <div class="modal fade" id="checkout" tabindex="-1" aria-labelledby="checkout" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Bill details</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Details</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Price</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Cpu Intel I5</td>
+                        <td>Some text Some text Some texts Some text Some text Some text.</td>
+                        <td>1</td>
+                        <td>$190.99</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Mouse Redrgon</td>
+                        <td>Some text Some text Some texts Some text Some text Some text.</td>
+                        <td>1</td>
+                        <td>$19.99</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Memory HyperX</td>
+                        <td>Some text Some text Some texts Some text Some text Some text.</td>
+                        <td>2</td>
+                        <td>$501.98</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>Keyboard Redragon K551</td>
+                        <td>Some text Some text Some texts Some text Some text Some text.</td>
+                        <td>1</td>
+                        <td>$25.99</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">5</th>
+                        <td>MSI RTX 3080TI</td>
+                        <td>Some text Some text Some texts Some text Some text Some text.</td>
+                        <td>1</td>
+                        <td>$550.99</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">5</th>
+                        <td>SSD Firecuda</td>
+                        <td>Some text Some text Some texts Some text Some text Some text.</td>
+                        <td>1</td>
+                        <td>$250.99</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" colspan="2"></th>
+                        <td colspan="2"><b>Total:</b></td>
+                        <td class="text-end"><b>$1540.93</b></td>
+                      </tr>
+                      <tr>
+                        <th scope="row" colspan="2"></th>
+                        <td colspan="2"><b>Discount:</b></td>
+                        <td class="text-end"><b>-$150.00</b></td>
+                      </tr>
+                      <tr>
+                        <th scope="row" colspan="2"></th>
+                        <td colspan="2"><b>Total to pay:</b></td>
+                        <td class="text-end"><b>$1390.93</b></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-outline-success">Checkout</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
