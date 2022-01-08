@@ -1,3 +1,25 @@
+$size-315px: 315px;
+$size-150px: 150px;
+$size-40px: 40px;
+
+@mixin height-set($height-px) {
+  min-height: $height-px;
+  max-height: $height-px;
+}
+
+@mixin form-contact($padding-px) {
+  background-image: url("../images/form-background-image.jpg");
+  display: flex;
+  background-size: cover;
+  padding-top: $padding-px;
+  padding-bottom: $padding-px;
+}
+
+@mixin btn-cart($size-px) {
+  width: $size-px;
+  height: $size-px;
+}
+
 .page-title {
   animation-duration: 2s;
   animation-name: apear;
@@ -14,21 +36,15 @@
 }
 
 .image-min-height-315 {
-  min-height: 315px;
-  max-height: 315px;
+  @include height-set($size-315px);
 }
 
 .cart-image-min-height-150 {
-  min-height: 150px;
-  max-height: 150px;
+  @include height-set($size-150px);
 }
 
 .form-contact {
-  background-image: url("../images/form-background-image.jpg");
-  display: flex;
-  background-size: cover;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  @include form-contact($size-40px);
 }
 
 .btn-custom {
@@ -64,8 +80,7 @@
 }
 
 .btn-cart {
-  width: 40px;
-  height: 40px;
+  @include btn-cart($size-40px);
   border-radius: 50%;
   background-color: #d9d9d9;
   display: flex;

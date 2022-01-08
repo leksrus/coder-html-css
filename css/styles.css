@@ -173,29 +173,29 @@
 }
 
 .font-share-tech-mono {
-  font-family: "Share Tech Mono", monospace;
+  font-size: "Share Tech Mono", monospace;
 }
 
 .font-mukta {
-  font-family: "Mukta", sans-serif;
+  font-size: "Mukta", sans-serif;
 }
 
 .font-baloo2 {
-  font-family: "Baloo 2", cursive;
+  font-size: "Baloo 2", cursive;
 }
 
 .font-varela {
-  font-family: "Varela Round", sans-serif;
+  font-size: "Varela Round", sans-serif;
 }
 
-.size-35 {
-  font-size: 35px;
+.size-20 {
+  font-size: 20px;
 }
 
 .size-23 {
   font-size: 23px;
 }
 
-.size-20 {
-  font-size: 20px;
+.size-35 {
+  font-size: 35px;
 }
