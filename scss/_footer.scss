@@ -1,3 +1,48 @@
-.footer-container {
-  background-color: darkslategray;
+$size-35px: 35px;
+
+.footer-conainer {
+  background-color: rgb(45, 66, 66);
+  color: aliceblue;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 40px;
+  padding-left: 180px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: auto;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.footer-title-color {
+  color: floralwhite;
+}
+
+@mixin footer-img($size) {
+  height: $size;
+  width: $size;
+}
+
+.footer-img {
+  @include footer-img($size-35px);
+}
+
+@mixin footer-padding-margin {
+  padding: 10px;
+  margin-top: 150px;
+  margin-left: 50px;
+}
+
+.footer-title {
+  margin-top: 30px;
+}
+
+.footer-data {
+  padding-left: 45px;
+}
+
+.footer-contact {
+  @include footer-padding-margin();
 }
