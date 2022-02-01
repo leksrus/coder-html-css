@@ -1,23 +1,4 @@
-$size-35px: 35px;
-
-.footer-conainer {
-  background-color: rgb(45, 66, 66);
-  color: aliceblue;
-  max-width: 100%;
-  margin: 0 auto;
-  margin-top: 50px;
-  padding: 40px;
-  padding-left: 180px;
-
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-template-rows: auto;
-  gap: 15px;
-}
-
-.footer-title-color {
-  color: floralwhite;
-}
+$size-25px: 25px;
 
 @mixin footer-img($size) {
   height: $size;
@@ -25,23 +6,27 @@ $size-35px: 35px;
 }
 
 .footer-img {
-  @include footer-img($size-35px);
+  @include footer-img($size-25px);
 }
 
-@mixin footer-padding-margin {
-  padding: 10px;
-  margin-top: 150px;
-  margin-left: 50px;
+.careers {
+  cursor: pointer;
+  color: #1e88e5;
 }
 
-.footer-title {
-  margin-top: 30px;
+.footer-container {
+  color: #caced1;
+  margin-top: 25px;
 }
 
-.footer-data {
-  padding-left: 45px;
+.row-1 {
+  background-color: #1e242a;
 }
 
-.footer-contact {
-  @include footer-padding-margin();
+.row-2 {
+  background-color: #28323c;
+}
+
+.margin-top {
+  margin-top: 175px;
 }
